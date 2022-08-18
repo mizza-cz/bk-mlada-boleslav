@@ -12,12 +12,14 @@
     }
   }
 }
+.hp-juniors-menu {
+  border-bottom: 1px solid var(--color-dark);
+  margin-bottom: 48px;
+}
 .hp-juniors-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--color-dark);
-  margin-bottom: 48px;
   height: 72px;
   flex-wrap: wrap;
   @include media-breakpoint-down(lg) {
