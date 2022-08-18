@@ -23,12 +23,14 @@
     padding-right: 24px;
   }
   @include media-breakpoint-down(lg) {
+    padding-bottom: 24px;
   }
   & + & {
-    border-left: 1px solid #faf9f9;
+    border-left: 4px solid #faf9f9;
     @include media-breakpoint-down(lg) {
       border-left: none;
-      padding-top: 0;
+      padding-top: 24px;
+      border-top: 4px solid #faf9f9;
     }
   }
   &__top {
