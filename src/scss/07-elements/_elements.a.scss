@@ -1,0 +1,9 @@
+a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  transition: text-decoration-color 0.3s;
+  color: inherit;
+  &:hover {
+    text-decoration-color: transparent;
+  }
+}

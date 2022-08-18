@@ -1,0 +1,21 @@
+.c-hp-posts-section {
+  margin-bottom: 64px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
+  }
+  &__inner {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+  &__col {
+    margin-bottom: 22px;
+    height: 100%;
+    width: 100%;
+    padding: 0 32px;
+  }
+  .link {
+    margin-left: auto;
+    width: fit-content;
+    display: block;
+  }
+}

@@ -1,0 +1,24 @@
+.c-pub-section {
+  margin-bottom: 64px;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 20px;
+  }
+  .row {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+  .col-xl-6 {
+    padding: 0 32px !important;
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 20px;
+    }
+    a {
+      @include media-breakpoint-down(xl) {
+        aspect-ratio: 1280/548;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

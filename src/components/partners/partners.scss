@@ -1,0 +1,14 @@
+.partners {
+  margin: 64px 0 54px;
+
+  .slick-arrow {
+    display: none;
+  }
+  &__item {
+    img {
+      max-height: 105px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+}

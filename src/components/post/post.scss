@@ -1,0 +1,64 @@
+.post {
+  display: block;
+  .h6 {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.3s;
+  }
+  &:hover {
+    .h6 {
+      text-decoration-color: var(--color-light) !important;
+    }
+    .post__img img {
+      transform: scale(1.1);
+    }
+  }
+  &__info {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 24px 32px;
+  }
+  .date {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  &__img {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 8e-5) 28.06%,
+          rgba(0, 0, 0, 0.8) 99.51%
+        ),
+        rgba(0, 0, 0, 0.3);
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      transition: all 0.3s;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration-color: transparent;
+  }
+}
+
+
+
+// / post video

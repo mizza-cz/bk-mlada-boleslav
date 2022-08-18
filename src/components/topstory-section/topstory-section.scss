@@ -1,0 +1,149 @@
+.c-topstory-section {
+  margin: 0 auto 64px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__col {
+    flex: 0 0 39%;
+    max-width: 39%;
+    @include media-breakpoint-down(xl) {
+      max-width: 100%;
+      flex: 100%;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    height: 350px;
+    overflow: hidden;
+    @include media-breakpoint-only(lg) {
+      max-width: 50%;
+      flex: 0 0 50%;
+      height: auto;
+    }
+    @include media-breakpoint-only(md) {
+      max-width: 50%;
+      flex: 0 0 50%;
+      height: auto;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+      flex: 100%;
+      height: auto;
+      min-height: 320px !important;
+    }
+
+    &:hover {
+      .h3,
+      .h5 {
+        text-decoration-color: var(--color-light);
+      }
+      img {
+        transform: scale(1.05);
+      }
+    }
+    svg {
+      width: 40px;
+      padding: 0 8px;
+      height: 40px;
+    }
+    &--main {
+      flex: 0 0 61%;
+      max-width: 61%;
+      height: 700px;
+      @include media-breakpoint-down(xl) {
+        max-width: 100%;
+        flex: 100%;
+        height: auto;
+      }
+      svg {
+        width: 60px;
+        padding: 0 8px;
+        height: 40px;
+      }
+    }
+
+    .date {
+      min-width: 144px;
+      text-align: right;
+      padding-left: 80px;
+    }
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 7e-5) 28.06%,
+          rgba(0, 0, 0, 0.6) 99.51%
+        ),
+        rgba(0, 0, 0, 0.3);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      right: 40px;
+      bottom: 40px;
+      z-index: 1;
+      background-image: url("../images/ico/chevron-right.svg");
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+  }
+  &__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--color-light);
+    z-index: 3;
+
+    &-box {
+      padding-left: 80px;
+      padding-right: 120px;
+      margin-bottom: 26px;
+      @include media-breakpoint-down(xl) {
+        padding-left: 40px;
+      }
+      .h3 {
+        @include media-breakpoint-down(md) {
+          font-size: 1.5rem;
+        }
+      }
+      .h3,
+      .h5 {
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: all 0.3s;
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+    margin-bottom: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}

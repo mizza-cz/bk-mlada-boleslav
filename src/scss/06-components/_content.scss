@@ -1,0 +1,44 @@
+.o-content {
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.o-content h1,
+.h1 {
+  font-size: 56px;
+  line-height: 1.25;
+}
+.o-content h2,
+.h2 {
+  font-size: 48px;
+  line-height: 1.208;
+}
+.o-content h3,
+.h3 {
+  font-size: 40px;
+  line-height: 1.25;
+}
+.o-content h4,
+.h4 {
+  font-size: 32px;
+  line-height: 1.188;
+}
+.o-content h5,
+.h5 {
+  font-size: 24px;
+  line-height: 1.167;
+}
+.o-content h6,
+.h6 {
+  font-size: 20px;
+  line-height: 1.2;
+}

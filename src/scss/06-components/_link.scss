@@ -1,0 +1,21 @@
+.link {
+  text-transform: uppercase;
+  border: 1px solid var(--color-dark);
+  padding: 6px 37px 5px 24px;
+  text-decoration-color: transparent;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    background-image: url("../images/ico/chevron-link.svg");
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
