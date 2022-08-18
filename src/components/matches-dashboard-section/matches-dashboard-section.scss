@@ -102,10 +102,16 @@
     margin-right: -8px;
     flex-wrap: wrap;
     li {
-      display: flex;
-      align-items: center;
       margin-bottom: 8px;
       padding: 0 8px;
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration-color: transparent;
+        &:hover {
+          text-decoration-color: inherit;
+        }
+      }
       svg {
         width: 12px;
         height: 12px;
