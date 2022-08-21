@@ -1,0 +1,107 @@
+.c-article__img {
+  width: 100%;
+  aspect-ratio: 1920/830;
+  position: relative;
+  @include media-breakpoint-down(md) {
+    min-height: 320px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 7e-5) 28.06%,
+        rgba(0, 0, 0, 0.6) 99.51%
+      ),
+      rgba(0, 0, 0, 0.3);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
+.c-article__inner {
+  .aside {
+    margin-top: 64px;
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
+}
+.row {
+  display: flex;
+  margin-left: -32px;
+  margin-right: -32px;
+  .col-xl-8 {
+    padding: 0 32px;
+  }
+}
+.c-article__content {
+  margin-top: -25.4%;
+  position: relative;
+  @include media-breakpoint-down(lg) {
+    margin-top: 0;
+  }
+  .h3 {
+    padding: 0 80px;
+    color: var(--color-light);
+    margin-bottom: 32px;
+    line-height: 1.2;
+    @include media-breakpoint-down(lg) {
+      color: var(--color-dark);
+      padding: 0 32px;
+      margin-top: 20px;
+    }
+  }
+  .o-content {
+    padding: 48px 80px 16px;
+    @include media-breakpoint-down(lg) {
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-top: 32px;
+    }
+  }
+}
+.c-article__categories {
+  display: flex;
+  flex-wrap: wrap;
+  @include media-breakpoint-down(lg) {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 16px;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+  .date {
+    padding-left: 80px;
+    @include media-breakpoint-down(lg) {
+      padding-left: 32px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .tag {
+    @include media-breakpoint-down(lg) {
+      border: 1px solid rgba(0, 0, 0, 1);
+    }
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      width: 100%;
+      border-top: 0;
+    }
+  }
+}
+.shadow-wrapper {
+  background: var(--color-light);
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.096345),
+    0px 0px 50px rgba(18, 22, 25, 0.05);
+}

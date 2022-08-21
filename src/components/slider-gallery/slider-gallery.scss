@@ -1,0 +1,112 @@
+.slider-gallery__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 80px;
+  position: relative;
+  @include media-breakpoint-down(xl) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.slider-gallery__name {
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  span {
+    color: var(--color-primary);
+    display: block;
+    margin-right: 8px;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 8px;
+  }
+}
+
+.slider-gallery {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 48px;
+}
+
+.media-wrap {
+  aspect-ratio: 896/501;
+  @include media-breakpoint-down(lg) {
+    min-height: 220px;
+    height: auto;
+  }
+}
+
+.slider-gallery .item {
+  outline: none;
+  position: relative;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.slides-numbers {
+  display: none;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 36px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 28px;
+    height: 24px;
+    background-image: url("../images/ico/shop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.slick-arrow {
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: none;
+  background: var(--color-dark);
+  position: absolute;
+  z-index: 5;
+  width: 72px;
+  height: 72px;
+  color: #fff;
+  text-transform: lowercase;
+  font-size: 0;
+  cursor: pointer;
+  transform: translateY(-64%);
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include media-breakpoint-down(xl) {
+    width: 48px;
+    height: 48px;
+    background-size: 12px;
+  }
+  &.slick-next {
+    right: -16px;
+    background-image: url("../images/ico/right.svg");
+  }
+
+  &.slick-prev {
+    left: -16px;
+    background-image: url("../images/ico/left.svg");
+  }
+}
