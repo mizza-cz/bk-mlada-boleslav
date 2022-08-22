@@ -1,5 +1,11 @@
 .shadow-wrapper {
   padding-top: 48px;
+  padding-left: 80px;
+  padding-right: 80px;
+  @include media-breakpoint-down(lg) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
   background: var(--color-light);
   box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.096345),
     0px 0px 50px rgba(18, 22, 25, 0.05);

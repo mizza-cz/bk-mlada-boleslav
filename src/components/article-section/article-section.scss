@@ -60,11 +60,8 @@
     }
   }
   .o-content {
-    padding: 0px 80px 16px;
-    @include media-breakpoint-down(lg) {
-      padding-left: 32px;
-      padding-right: 32px;
-    }
+    padding-bottom: 16px;
+    
   }
 }
 .c-article__categories {
