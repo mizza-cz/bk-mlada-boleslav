@@ -1,0 +1,24 @@
+.c-static-section {
+  @include media-breakpoint-down(xl) {
+    .aside {
+      display: none;
+    }
+  }
+  .o-content {
+    h1 {
+      color: var(--color-primary);
+      margin-bottom: 24px;
+      font-size: 32px;
+      line-height: 1.188;
+      @include media-breakpoint-down(lg) {
+        font-size: 24px;
+      }
+    }
+    padding: 0px 80px 48px;
+    @include media-breakpoint-down(lg) {
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-bottom: 32px;
+    }
+  }
+}

@@ -5,4 +5,40 @@
     width: fit-content;
     margin-left: auto;
   }
+  &-box {
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.096345),
+      0px 0px 50px rgba(18, 22, 25, 0.05);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 24px 32px;
+    margin-bottom: 64px;
+    @include media-breakpoint-down(xxl) {
+      margin-bottom: 32px;
+    }
+    .h5 {
+      margin-bottom: 8px;
+      color: var(--color-primary);
+    }
+  }
+}
+.aside__menu {
+  li {
+    display: block;
+    border-bottom: 1px solid var(--color-light-border);
+    padding: 8px 0;
+    &:last-child{
+      border: 0;
+    }
+    a {
+      display: block;
+      font-weight: 16px;
+      line-height: 1.131;
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+    .active {
+      font-weight: 600;
+    }
+  }
 }

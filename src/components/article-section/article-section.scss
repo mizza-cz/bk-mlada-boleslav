@@ -60,11 +60,10 @@
     }
   }
   .o-content {
-    padding: 48px 80px 16px;
+    padding: 0px 80px 16px;
     @include media-breakpoint-down(lg) {
       padding-left: 32px;
       padding-right: 32px;
-      padding-top: 32px;
     }
   }
 }
@@ -74,7 +73,8 @@
   @include media-breakpoint-down(lg) {
     padding-left: 32px;
     padding-right: 32px;
-    margin-bottom: 16px;
+    padding-bottom: 24px;
+    background-color: #fff;
     @include media-breakpoint-down(sm) {
       flex-direction: column;
     }
@@ -100,8 +100,4 @@
     }
   }
 }
-.shadow-wrapper {
-  background: var(--color-light);
-  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.096345),
-    0px 0px 50px rgba(18, 22, 25, 0.05);
-}
+
