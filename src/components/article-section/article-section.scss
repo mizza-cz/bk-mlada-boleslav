@@ -90,6 +90,9 @@
     }
   }
   .tag {
+    span {
+      font-weight: 600;
+    }
     @include media-breakpoint-down(lg) {
       border: 1px solid rgba(0, 0, 0, 1);
     }
@@ -100,4 +103,3 @@
     }
   }
 }
-
