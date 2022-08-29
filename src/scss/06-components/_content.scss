@@ -114,7 +114,7 @@
 }
 .table {
   background-color: var(--color-light);
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(md) {
     width: max-content;
   }
 }
