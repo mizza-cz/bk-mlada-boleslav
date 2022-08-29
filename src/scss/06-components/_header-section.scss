@@ -1,0 +1,51 @@
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 16px;
+  &__link--table::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url("../images/ico/online.svg");
+    top: 7px;
+  }
+  &__link {
+    margin-bottom: 16px;
+    padding-left: 21px;
+    margin-right: 24px;
+    text-decoration-color: transparent;
+    position: relative;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  &__form {
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    justify-self: start;
+  }
+  &__label,
+  .h4 {
+    margin-bottom: 16px;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+  }
+}
