@@ -2,9 +2,6 @@
   width: 100%;
   aspect-ratio: 1920/830;
   position: relative;
-  @include media-breakpoint-down(md) {
-    min-height: 320px;
-  }
   &::after {
     content: "";
     position: absolute;
@@ -24,6 +21,7 @@
     height: 100%;
     display: block;
     object-fit: cover;
+    object-position: center;
   }
 }
 .c-match__inner {
