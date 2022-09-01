@@ -110,3 +110,19 @@
     text-align: left;
   }
 }
+.aside__menu .aside__menu-player {
+  display: flex;
+  align-items: center;
+  &-num {
+    margin-left: 24px;
+    margin-right: 16px;
+  }
+}
+.aside-player {
+  .aside-box {
+    margin-bottom: 24px;
+  }
+  .link {
+    margin-bottom: 64px;
+  }
+}
