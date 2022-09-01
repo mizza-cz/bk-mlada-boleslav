@@ -98,6 +98,12 @@
     border-bottom: 1px solid #e9f6eb;
     padding-bottom: 16px;
     padding-top: 16px;
+    a {
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
   }
 }
 .table > :not(:first-child) {
