@@ -8,6 +8,7 @@ function tablesWrap() {
 
   for (i = 0; i < contentTables.length; ++i) {
     contentTables[i].classList.add("table");
+    contentTables[i].classList.add("table_sort");
 
     var contentTableWrap = document.createElement("div");
 
