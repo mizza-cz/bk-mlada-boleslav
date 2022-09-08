@@ -1,0 +1,19 @@
+.c-archive-section {
+  &__inner {
+    padding-bottom: 40px;
+    .row {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
+  .post__img {
+    height: auto;
+  }
+  .post__info {
+    height: 100%;
+  }
+  .post {
+    height: 100%;
+    overflow: hidden;
+  }
+}
