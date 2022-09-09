@@ -1,6 +1,14 @@
 .partners {
   margin: 64px 0 54px;
-
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .slick-slide img {
+    max-height: 105px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
   .slick-arrow {
     display: none;
   }
