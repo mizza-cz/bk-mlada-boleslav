@@ -1,0 +1,43 @@
+.c-accreditation-section {
+  .link {
+    margin: 32px auto 0;
+    width: fit-content;
+    display: block;
+    cursor: pointer;
+  }
+}
+.c-accreditation {
+  &__form {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    span {
+      font-size: 12px;
+    }
+  }
+}
+label {
+  margin-bottom: 16px;
+  display: block;
+  span {
+    font-size: 12px;
+  }
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0;
+}
+.label__checkbox {
+  align-items: center;
+  display: flex;
+  input {
+    margin-right: 8px;
+    display: inline-block;
+  }
+}
+input[type="checkbox"] {
+  width: 20px;
+  accent-color: var(--color-primary);
+  height: 20px;
+}

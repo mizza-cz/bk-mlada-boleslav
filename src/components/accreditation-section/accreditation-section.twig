@@ -1,16 +1,125 @@
 <section class="c-accreditation-section">
-   <div class="container">
-     <div class="row">
-       <div class="col-xl-8">
-         <div class="shadow-wrapper">
-           <div class="o-content">
-             <h1>Akreditace na jednotlivé zápasy</h1>
-           
-           </div>
-         </div>
-       </div>
-       {% include "@components/aside/aside-2.twig" %}
-     </div>
-   </div>
- </section>
- 
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8">
+        <div class="shadow-wrapper">
+          <div class="o-content">
+            <h1>Akreditace na jednotlivé zápasy</h1>
+            <div class="c-accreditation__form">
+              <form action="">
+                <div class="row">
+                  <div class="col-sm-6 col-12">
+                    <label for="">
+                      Pro zápas:
+                      <select class="js-select" name="" id="">
+                        <option>
+                          16.09.2022: BK Mladá Boleslav – HC Sparta Praha
+                        </option>
+                        <option>
+                          23.09.2022: BK Mladá Boleslav – HC Motor Č. Budějovice
+                        </option>
+                        <option>
+                          27.09.2022: BK Mladá Boleslav – Bílí Tygři Liberec
+                        </option>
+                        <option>
+                          02.10.2022: BK Mladá Boleslav – Rytíři Kladno
+                        </option>
+                        <option>
+                          16.09.2022: BK Mladá Boleslav – HC Sparta Praha
+                        </option>
+                        <option>
+                          23.09.2022: BK Mladá Boleslav – HC Motor Č. Budějovice
+                        </option>
+                        <option>
+                          27.09.2022: BK Mladá Boleslav – Bílí Tygři Liberec
+                        </option>
+                        <option>
+                          02.10.2022: BK Mladá Boleslav – Rytíři Kladno
+                        </option>
+                        <option>
+                          16.09.2022: BK Mladá Boleslav – HC Sparta Praha
+                        </option>
+                        <option>
+                          23.09.2022: BK Mladá Boleslav – HC Motor Č. Budějovice
+                        </option>
+                        <option>
+                          27.09.2022: BK Mladá Boleslav – Bílí Tygři Liberec
+                        </option>
+                        <option>
+                          02.10.2022: BK Mladá Boleslav – Rytíři Kladno
+                        </option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <label for="">
+                      Jméno:
+                      <input name="jmeno" type="text" required />
+                    </label>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <label for="">
+                      Příjmení:
+                      <input type="text" required />
+                    </label>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <label for="">
+                      Název média:
+                      <input name="jmeno" type="text" />
+                    </label>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <label for="">
+                      E-mail:
+                      <input name="jmeno" type="email" required />
+                      <span>pro zasílání tiskových zpráv</span>
+                    </label>
+                  </div>
+                  <div class="col-sm-6 col-12">
+                    <label for="">
+                      Telefon:
+                      <input type="tel" />
+                      <span>pro ověření zaslaných údajů</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <label class="label__checkbox" for="">
+                    <input type="checkbox" />
+                    Píšící
+                  </label>
+                  <label class="label__checkbox" for="">
+                    <input type="checkbox" />
+                    Rozhlas
+                  </label>
+                  <label class="label__checkbox" for="">
+                    <input type="checkbox" />
+                    Foto
+                  </label>
+                  <label class="label__checkbox mb-0" for="">
+                    <input type="checkbox" />
+                    TV (vlastním akreditaci TV přenosy od BPA)
+                  </label>
+                  <span class="mb-4 d-block">
+                    akreditaci pro TV vyřizuje společnost BPA
+                  </span>
+                  <label class="label__checkbox">
+                    <input type="checkbox" required />
+                    <a href="#">souhlasím s podmínkami</a>
+                  </label>
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6LeqHSohAAAAAMJquJPxd7PJLR4OZas7ZoUBWXKZ"
+                  ></div>
+                  <button class="link">Odeslat žádost</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% include "@components/aside/aside-2.twig" %}
+    </div>
+  </div>
+</section>
