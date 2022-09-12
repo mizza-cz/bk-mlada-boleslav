@@ -1,9 +1,22 @@
 .c-accreditation-section {
-  .link {
-    margin: 32px auto 0;
-    width: fit-content;
-    display: block;
+  .btn {
+    padding: 0 20px;
+    transition: all 0.3s;
+    border: none;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2.4rem;
+    border-radius: 0;
     cursor: pointer;
+    width: fit-content;
+    margin: 32px auto 0;
+    &:hover {
+      color: var(--color-primary);
+    }
   }
 }
 .c-accreditation {
