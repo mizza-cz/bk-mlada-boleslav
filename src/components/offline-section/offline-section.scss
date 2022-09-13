@@ -1,0 +1,17 @@
+.c-offline-section {
+  .shadow-wrapper {
+    padding-bottom: 40px;
+  }
+  table {
+    td a {
+      font-weight: 500;
+      color: var(--color-primary);
+      text-decoration-color: var(--color-primary);
+      padding-left: 2px;
+      padding-right: 2px;
+      &:hover {
+        text-decoration-color: transparent;
+      }
+    }
+  }
+}
