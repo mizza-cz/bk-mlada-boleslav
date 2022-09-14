@@ -163,6 +163,10 @@
   border: 16px solid var(--color-light-border);
   border-top: none;
   margin-bottom: 40px;
+  &-bottom {
+    border: 16px solid var(--color-light-border);
+    padding: 16px;
+  }
   &-box {
     max-width: 50%;
     flex: 0 0 50%;
