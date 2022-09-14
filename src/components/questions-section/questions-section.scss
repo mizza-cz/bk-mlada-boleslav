@@ -1,0 +1,26 @@
+.c-questions__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  p {
+    padding: 0 8px;
+    margin: 0;
+    a {
+      color: var(--color-primary);
+    }
+  }
+}
+.c-questions-section {
+  .o-content {
+    padding-bottom: 40px;
+    h6 {
+      margin-bottom: 6px !important;
+      margin-top: 32px;
+      font-size: 18px;
+    }
+    p a {
+      color: var(--color-primary);
+    }
+  }
+}
