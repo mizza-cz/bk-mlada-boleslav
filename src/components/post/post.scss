@@ -31,21 +31,21 @@
     height: 180px;
     position: relative;
     overflow: hidden;
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      background: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 8e-5) 28.06%,
-          rgba(0, 0, 0, 0.8) 99.51%
-        ),
-        rgba(0, 0, 0, 0.3);
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   z-index: 1;
+    //   background: linear-gradient(
+    //       180deg,
+    //       rgba(0, 0, 0, 8e-5) 28.06%,
+    //       rgba(0, 0, 0, 0.8) 99.51%
+    //     ),
+    //     rgba(0, 0, 0, 0.3);
+    //   left: 0;
+    //   top: 0;
+    //   width: 100%;
+    //   height: 100%;
+    // }
     img {
       transition: all 0.3s;
       height: 100%;
@@ -61,4 +61,3 @@
     text-decoration-color: transparent;
   }
 }
-

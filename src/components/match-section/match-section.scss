@@ -224,3 +224,15 @@
     padding-top: 0;
   }
 }
+.c-match__trener {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  img {
+    width: 40px;
+    margin: 0;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 8px;
+  }
+}
