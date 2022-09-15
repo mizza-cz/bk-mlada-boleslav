@@ -9,9 +9,11 @@
     width: 80px;
     height: 80px;
     margin: 0 auto;
-    &:hover img {
+    &:hover img,
+    &:hover svg {
       transform: scale(1.1);
     }
+    svg,
     img {
       width: 100%;
       height: 100%;
