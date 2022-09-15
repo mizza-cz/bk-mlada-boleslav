@@ -1,0 +1,96 @@
+<section class="c-static-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto col-12">
+        <div class="shadow-wrapper pb-2">
+          <h1 class="h4 mb-3 text-primary text-uppercase">Archiv aktualit</h1>
+          <div class="header-section__row">
+            <form action="" class="header-section__form">
+              <div class="row gy-6">
+                <div class="col-md-2 col-sm-3">
+                  <label class="o-select header-section__label">
+                    <select class="js-select">
+                      <option>Měsíc</option>
+                      <option>leden</option>
+                      <option>únor</option>
+                      <option>březen</option>
+                      <option>duben</option>
+                      <option>květen</option>
+                      <option>červen</option>
+                      <option>červenec</option>
+                      <option>srpen</option>
+                      <option>září</option>
+                      <option>říjen</option>
+                      <option>listopad</option>
+                      <option>prosinec</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <label class="header-section__input">
+                    <input type="text" placeholder="Hledat v článcích..." />
+                  </label>
+                </div>
+                <div class="col-md-2 col-sm-3 col-12">
+                  <button class="btn">Hledat</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="c-archive-section__inner">
+            <div class="row g-6 mb-6">
+              <div class="col-sm-6 col-xl-4">
+                {% include "@components/post/post.twig" %}
+              </div>
+              <div class="col-sm-6 col-xl-4">
+                {% include "@components/post/post.twig" %}
+              </div>
+              <div class="col-sm-6 col-xl-4">
+                {% include "@components/post/post.twig" %}
+              </div>
+              <div class="col-sm-6 col-xl-4">
+                {% include "@components/post/post.twig" %}
+              </div>
+              <div class="col-sm-6 col-xl-4">
+                {% include "@components/post/post.twig" %}
+              </div>
+              <div class="col-sm-6 col-xl-4">
+                {% include "@components/post/post.twig" %}
+              </div>
+              <div class="col-sm-6 col-xl-4">
+                {% include "@components/post/post.twig" %}
+              </div>
+              <div class="col-sm-6 col-xl-4">
+                {% include "@components/post/post.twig" %}
+              </div>
+              <div class="col-sm-6 col-xl-4">
+                {% include "@components/post/post.twig" %}
+              </div>
+            </div>
+            <nav aria-label="Další stránky">
+              <ul
+                class="pagination d-flex flex-wrap pagination-flat pagination-success"
+              >
+                <li class="page-item active">
+                  <a class="page-link" href="#" data-abc="true">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" data-abc="true">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" data-abc="true">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" data-abc="true">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" data-abc="true"> »</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

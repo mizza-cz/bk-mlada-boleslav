@@ -2,20 +2,20 @@
   width: 100%;
   aspect-ratio: 1920/830;
   position: relative;
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background: linear-gradient(
-  //       180deg,
-  //       rgba(0, 0, 0, 7e-5) 28.06%,
-  //       rgba(0, 0, 0, 0.6) 99.51%
-  //     ),
-  //     rgba(0, 0, 0, 0.3);
-  // }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 7e-5) 28.06%,
+        rgba(0, 0, 0, 0.9) 99.51%
+      ),
+      rgba(0, 0, 0, 0);
+  }
   img {
     width: 100%;
     height: 100%;
