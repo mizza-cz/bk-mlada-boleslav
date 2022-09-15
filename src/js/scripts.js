@@ -5,6 +5,7 @@
 //=include ../../node_modules/slick-carousel/slick/slick.js
 //=include ../../node_modules/lightgallery/lightgallery.umd.js
 //=include ../../node_modules/lightgallery/lightgallery.min.js
+//=include ../../node_modules/magnific-popup/dist/jquery.magnific-popup.js
 document.addEventListener("DOMContentLoaded", function () {
   //=include ../components/**/*.js
   //=include custom/*.js

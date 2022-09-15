@@ -41,6 +41,7 @@
         "mixitup": "^3.3.1",
         "select2": "^4.1.0-rc.0",
         "slick-carousel": "^1.8.1",
-        "lightgallery": "^2.4.0"
+        "lightgallery": "^2.4.0",
+        "magnific-popup": "^1.1.0"
     }
 }

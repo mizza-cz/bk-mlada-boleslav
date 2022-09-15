@@ -23,6 +23,7 @@ function tablesWrap() {
   }
 }
 
+
 // IFRAME youtube/google (wysiwyg editor) responsive
 function iframesWrap() {
   var contentIframes = document.querySelectorAll(".o-content iframe"),
