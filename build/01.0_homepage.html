@@ -11,8 +11,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 	<link rel="preload" href="css/styles.css" as="style" />
-	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202209153748" />
-	<link rel="stylesheet" media="print" href="css/prints.css?v=202209153748" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=20220915422" />
+	<link rel="stylesheet" media="print" href="css/prints.css?v=20220915422" />
 	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
 	<link rel="preload" href="js/scripts.js" as="script" />
@@ -22,16 +22,21 @@
 
 <body>
 	<div class="base">
-		<div id="overlay">
-			<div class="popup">
-				<a class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';">Přejít na úvodní stránku.</a>
-				<a href="#">
-					<div class="popup__img">
-						<img src="images/content/cover.png" loading="lazy" alt="" />
-					</div>
-				</a>
-			</div>
-		</div>
+		<!-- <div id="overlay">
+        <div class="popup">
+          <a
+            class="close"
+            title="Закрыть"
+            onclick="document.getElementById('overlay').style.display='none';"
+            >Přejít na úvodní stránku.</a
+          >
+          <a href="#">
+            <div class="popup__img">
+              <img src="images/content/cover.png" loading="lazy" alt="" />
+            </div>
+          </a>
+        </div>
+      </div> -->
 		<header class="header">
 			<div class="container">
 				<div class="header__top">
@@ -806,122 +811,450 @@
 				</div>
 			</section>
 			<section class="hp-juniors-section">
-				<div class="hp-juniors-menu">
-					<div class="container">
+				<div class="container">
+					<div class="tabs-wrapper">
 						<div class="hp-juniors-header">
 							<h5 class="h4">Mládež a B-tým</h5>
-							<div class="hp-juniors__tabs">
-								<button class="btn filter mixitup-control-active" data-filter="all">
-									Kompletní přehled
-								</button>
-								<button class="btn filter" data-filter=".juniori">Junioři</button>
-								<button class="btn filter" data-filter=".dorost">Dorost</button>
-								<button class="btn filter" data-filter=".zaci">Žáci</button>
-								<button class="btn filter" data-filter=".b-tym">B-tým</button>
+							<ul class="hp-juniors__tabs tabs">
+								<li>
+									<a href="#" class="tab active" data-id="1">Junioři</a>
+								</li>
+								<li>
+									<a href="#" class="tab" data-id="2">Dorost</a>
+								</li>
+								<li>
+									<a href="#" class="tab" data-id="3">Žáci</a>
+								</li>
+								<li>
+									<a href="#" class="tab" data-id="4">B-tým</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tab-content tab-active" id="1">
+							<div class="hp-juniors__wrapper">
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Junioři</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Junioři</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Junioři</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Junioři</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Junioři</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">B-tým</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="hp-juniors__wrapper">
-						<article class="post mix b-tym">
-							<a href="#" class="post__link">
-								<div class="post__img">
-									<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-									<div class="hp-juniors__categories">
-										<div class="date">16. 12. 2021</div>
-										<div class="tag">B-tým</div>
-									</div>
-								</div>
-								<div class="post__info">
-									<h3 class="h6">
-										Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-									</h3>
-								</div>
-							</a>
-						</article>
-						<article class="post mix juniori">
-							<a href="#" class="post__link">
-								<div class="post__img">
-									<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-									<div class="hp-juniors__categories">
-										<div class="date">16. 12. 2021</div>
-										<div class="tag">Junioři</div>
-									</div>
-								</div>
-								<div class="post__info">
-									<h3 class="h6">
-										Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-									</h3>
-								</div>
-							</a>
-						</article>
-
-						<article class="post mix dorost">
-							<a href="#" class="post__link">
-								<div class="post__img">
-									<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-									<div class="hp-juniors__categories">
-										<div class="date">16. 12. 2021</div>
-										<div class="tag">Dorost</div>
-									</div>
-								</div>
-								<div class="post__info">
-									<h3 class="h6">
-										Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-									</h3>
-								</div>
-							</a>
-						</article>
-						<article class="post mix zaci">
-							<a href="#" class="post__link">
-								<div class="post__img">
-									<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-									<div class="hp-juniors__categories">
-										<div class="date">16. 12. 2021</div>
-										<div class="tag">Žáci</div>
-									</div>
-								</div>
-								<div class="post__info">
-									<h3 class="h6">
-										Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-									</h3>
-								</div>
-							</a>
-						</article>
-
-						<article class="post mix dorost">
-							<a href="#" class="post__link">
-								<div class="post__img">
-									<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-									<div class="hp-juniors__categories">
-										<div class="date">16. 12. 2021</div>
-										<div class="tag">Dorost</div>
-									</div>
-								</div>
-								<div class="post__info">
-									<h3 class="h6">
-										Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-									</h3>
-								</div>
-							</a>
-						</article>
-						<article class="post mix zaci">
-							<a href="#" class="post__link">
-								<div class="post__img">
-									<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-									<div class="hp-juniors__categories">
-										<div class="date">16. 12. 2021</div>
-										<div class="tag">Žáci</div>
-									</div>
-								</div>
-								<div class="post__info">
-									<h3 class="h6">
-										Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-									</h3>
-								</div>
-							</a>
-						</article>
+						<div class="tab-content" id="2">
+							<div class="hp-juniors__wrapper">
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Dorost</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Dorost</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Dorost</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Dorost</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Junioři</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">B-tým</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+							</div>
+						</div>
+						<div class="tab-content" id="3">
+							<div class="hp-juniors__wrapper">
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Dorost</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Žáci</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Žáci</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Žáci</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">Žáci</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">B-tým</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+							</div>
+						</div>
+						<div class="tab-content" id="4">
+							<div class="hp-juniors__wrapper">
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">B-tým</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">B-tým</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">B-tým</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">B-tým</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">B-tým</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+								<article class="post">
+									<a href="#" class="post__link">
+										<div class="post__img">
+											<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+											<div class="hp-juniors__categories">
+												<div class="date">16. 12. 2021</div>
+												<div class="tag">B-tým</div>
+											</div>
+										</div>
+										<div class="post__info">
+											<h3 class="h6">
+												Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude
+												dál?
+											</h3>
+										</div>
+									</a>
+								</article>
+							</div>
+						</div>
 					</div>
 					<a href="#" class="link">Další články</a>
 				</div>
@@ -1053,7 +1386,7 @@
 		);
 	</script>
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script defer src="js/scripts.js?v=20220915039"></script>
+	<script defer src="js/scripts.js?v=202209154277"></script>
 </body>
 
 </html>

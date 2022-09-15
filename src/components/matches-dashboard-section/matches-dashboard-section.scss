@@ -103,8 +103,15 @@
         display: flex;
         align-items: center;
         text-decoration-color: transparent;
+        span {
+          text-decoration: underline;
+          text-decoration-color: transparent;
+        }
         &:hover {
           text-decoration-color: inherit;
+          span {
+            text-decoration-color: inherit;
+          }
         }
       }
       svg {
