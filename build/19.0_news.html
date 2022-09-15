@@ -11,8 +11,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 	<link rel="preload" href="css/styles.css" as="style" />
-	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=20220915656" />
-	<link rel="stylesheet" media="print" href="css/prints.css?v=20220915656" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202209153951" />
+	<link rel="stylesheet" media="print" href="css/prints.css?v=202209153951" />
 	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
 	<link rel="preload" href="js/scripts.js" as="script" />
@@ -22,16 +22,21 @@
 
 <body>
 	<div class="base">
-		<div id="overlay">
-			<div class="popup">
-				<a class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';">Přejít na úvodní stránku.</a>
-				<a href="#">
-					<div class="popup__img">
-						<img src="images/content/cover.png" loading="lazy" alt="" />
-					</div>
-				</a>
-			</div>
-		</div>
+		<!-- <div id="overlay">
+        <div class="popup">
+          <a
+            class="close"
+            title="Закрыть"
+            onclick="document.getElementById('overlay').style.display='none';"
+            >Přejít na úvodní stránku.</a
+          >
+          <a href="#">
+            <div class="popup__img">
+              <img src="images/content/cover.png" loading="lazy" alt="" />
+            </div>
+          </a>
+        </div>
+      </div> -->
 		<header class="header">
 			<div class="container">
 				<div class="header__top">
@@ -224,7 +229,7 @@
 			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
-			<section class="c-static-section">
+			<section class="c-news-section">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-10 m-auto col-12">
@@ -263,164 +268,155 @@
 										</div>
 									</form>
 								</div>
-								<div class="c-archive-section__inner">
-									<div class="row g-6 mb-6">
-										<div class="col-sm-6 col-xl-4">
-											<article class="post">
-												<a href="#" class="post__link">
-													<div class="post__img">
-														<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-														<div class="date">16. 12. 2021</div>
-													</div>
-													<div class="post__info">
-														<h3 class="h6">
-															Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-														</h3>
-													</div>
-												</a>
-											</article>
+								<div class="c-news-section__inner">
+									<div class="c-news-section__item">
+										<div class="c-news-section__row">
+											<div class="tag">6. 9. 2022</div>
+											<h2 class="h5">Zemřel pan Pecka</h2>
 										</div>
-										<div class="col-sm-6 col-xl-4">
-											<article class="post">
-												<a href="#" class="post__link">
-													<div class="post__img">
-														<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-														<div class="date">16. 12. 2021</div>
-													</div>
-													<div class="post__info">
-														<h3 class="h6">
-															Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-														</h3>
-													</div>
-												</a>
-											</article>
-										</div>
-										<div class="col-sm-6 col-xl-4">
-											<article class="post">
-												<a href="#" class="post__link">
-													<div class="post__img">
-														<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-														<div class="date">16. 12. 2021</div>
-													</div>
-													<div class="post__info">
-														<h3 class="h6">
-															Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-														</h3>
-													</div>
-												</a>
-											</article>
-										</div>
-										<div class="col-sm-6 col-xl-4">
-											<article class="post">
-												<a href="#" class="post__link">
-													<div class="post__img">
-														<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-														<div class="date">16. 12. 2021</div>
-													</div>
-													<div class="post__info">
-														<h3 class="h6">
-															Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-														</h3>
-													</div>
-												</a>
-											</article>
-										</div>
-										<div class="col-sm-6 col-xl-4">
-											<article class="post">
-												<a href="#" class="post__link">
-													<div class="post__img">
-														<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-														<div class="date">16. 12. 2021</div>
-													</div>
-													<div class="post__info">
-														<h3 class="h6">
-															Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-														</h3>
-													</div>
-												</a>
-											</article>
-										</div>
-										<div class="col-sm-6 col-xl-4">
-											<article class="post">
-												<a href="#" class="post__link">
-													<div class="post__img">
-														<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-														<div class="date">16. 12. 2021</div>
-													</div>
-													<div class="post__info">
-														<h3 class="h6">
-															Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-														</h3>
-													</div>
-												</a>
-											</article>
-										</div>
-										<div class="col-sm-6 col-xl-4">
-											<article class="post">
-												<a href="#" class="post__link">
-													<div class="post__img">
-														<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-														<div class="date">16. 12. 2021</div>
-													</div>
-													<div class="post__info">
-														<h3 class="h6">
-															Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-														</h3>
-													</div>
-												</a>
-											</article>
-										</div>
-										<div class="col-sm-6 col-xl-4">
-											<article class="post">
-												<a href="#" class="post__link">
-													<div class="post__img">
-														<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-														<div class="date">16. 12. 2021</div>
-													</div>
-													<div class="post__info">
-														<h3 class="h6">
-															Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-														</h3>
-													</div>
-												</a>
-											</article>
-										</div>
-										<div class="col-sm-6 col-xl-4">
-											<article class="post">
-												<a href="#" class="post__link">
-													<div class="post__img">
-														<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-														<div class="date">16. 12. 2021</div>
-													</div>
-													<div class="post__info">
-														<h3 class="h6">
-															Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
-														</h3>
-													</div>
-												</a>
-											</article>
-										</div>
+										<p>
+											Ve věku 71 let dne 26. srpna nečekaně zemřel dlouholetý
+											zaměstnanec mladoboleslavského zimního stadionu pan Jiří Pecka.
+											Čest jeho památce.
+										</p>
 									</div>
-									<nav aria-label="Další stránky">
-										<ul class="pagination d-flex flex-wrap pagination-flat pagination-success">
-											<li class="page-item active">
-												<a class="page-link" href="#" data-abc="true">1</a>
-											</li>
-											<li class="page-item">
-												<a class="page-link" href="#" data-abc="true">2</a>
-											</li>
-											<li class="page-item">
-												<a class="page-link" href="#" data-abc="true">3</a>
-											</li>
-											<li class="page-item">
-												<a class="page-link" href="#" data-abc="true">4</a>
-											</li>
-											<li class="page-item">
-												<a class="page-link" href="#" data-abc="true"> »</a>
-											</li>
-										</ul>
-									</nav>
+									<div class="c-news-section__item">
+										<div class="c-news-section__row">
+											<div class="tag">6. 9. 2022</div>
+											<h2 class="h5">Moravec na MS U20</h2>
+										</div>
+										<p>
+											Ve věku 71 let dne 26. srpna nečekaně zemřel dlouholetý
+											zaměstnanec mladoboleslavského zimního stadionu pan Jiří Pecka.
+											Čest jeho památce.
+										</p>
+									</div>
+									<div class="c-news-section__item">
+										<div class="c-news-section__row">
+											<div class="tag">6. 9. 2022</div>
+											<h2 class="h5">Moravec na MS U20</h2>
+										</div>
+										<p>
+											Do probíhající přípravy BK Mladá Boleslav se zapojil obránce
+											Matěj Stříteský. Ten je ze svého působení u Bruslařů v letech
+											2014 až 2017 stále kmenovým hráčem Středočechů a s klubem se
+											dohodl na možnosti trénovat a připravovat se s týmem. S největší
+											pravděpodobností jej uvidíte i v některých přípravných zápasech.
+											Do probíhající přípravy BK Mladá Boleslav se zapojil obránce
+											Matěj Stříteský. Ten je ze svého působení u Bruslařů v letech
+											2014 až 2017 stále kmenovým hráčem Středočechů a s klubem se
+											dohodl na možnosti trénovat a připravovat se s týmem. S největší
+											pravděpodobností jej uvidíte i v některých přípravných zápasech.
+										</p>
+									</div>
+									<div class="c-news-section__item">
+										<div class="c-news-section__row">
+											<div class="tag">6. 9. 2022</div>
+											<h2 class="h5">Stříteský u Bruslařů</h2>
+										</div>
+										<p>
+											Do probíhající přípravy BK Mladá Boleslav se zapojil obránce
+											Matěj Stříteský. Ten je ze svého působení u Bruslařů v letech
+											2014 až 2017 stále kmenovým hráčem Středočechů a s klubem se
+											dohodl na možnosti trénovat a připravovat se s týmem. S největší
+											pravděpodobností jej uvidíte i v některých přípravných zápasech.
+										</p>
+									</div>
+									<div class="c-news-section__item">
+										<div class="c-news-section__row">
+											<div class="tag">6. 9. 2022</div>
+											<h2 class="h5">Zemřel pan Pecka</h2>
+										</div>
+										<p>
+											Ve věku 71 let dne 26. srpna nečekaně zemřel dlouholetý
+											zaměstnanec mladoboleslavského zimního stadionu pan Jiří Pecka.
+											Čest jeho památce.
+										</p>
+									</div>
+									<div class="c-news-section__item">
+										<div class="c-news-section__row">
+											<div class="tag">6. 9. 2022</div>
+											<h2 class="h5">Zemřel pan Pecka</h2>
+										</div>
+										<p>
+											Ve věku 71 let dne 26. srpna nečekaně zemřel dlouholetý
+											zaměstnanec mladoboleslavského zimního stadionu pan Jiří Pecka.
+											Čest jeho památce.
+										</p>
+									</div>
+									<div class="c-news-section__item">
+										<div class="c-news-section__row">
+											<div class="tag">6. 9. 2022</div>
+											<h2 class="h5">Moravec na MS U20</h2>
+										</div>
+										<p>
+											Ve věku 71 let dne 26. srpna nečekaně zemřel dlouholetý
+											zaměstnanec mladoboleslavského zimního stadionu pan Jiří Pecka.
+											Čest jeho památce.
+										</p>
+									</div>
+									<div class="c-news-section__item">
+										<div class="c-news-section__row">
+											<div class="tag">6. 9. 2022</div>
+											<h2 class="h5">Moravec na MS U20</h2>
+										</div>
+										<p>
+											Do probíhající přípravy BK Mladá Boleslav se zapojil obránce
+											Matěj Stříteský. Ten je ze svého působení u Bruslařů v letech
+											2014 až 2017 stále kmenovým hráčem Středočechů a s klubem se
+											dohodl na možnosti trénovat a připravovat se s týmem. S největší
+											pravděpodobností jej uvidíte i v některých přípravných zápasech.
+											Do probíhající přípravy BK Mladá Boleslav se zapojil obránce
+											Matěj Stříteský. Ten je ze svého působení u Bruslařů v letech
+											2014 až 2017 stále kmenovým hráčem Středočechů a s klubem se
+											dohodl na možnosti trénovat a připravovat se s týmem. S největší
+											pravděpodobností jej uvidíte i v některých přípravných zápasech.
+										</p>
+									</div>
+									<div class="c-news-section__item">
+										<div class="c-news-section__row">
+											<div class="tag">6. 9. 2022</div>
+											<h2 class="h5">Stříteský u Bruslařů</h2>
+										</div>
+										<p>
+											Do probíhající přípravy BK Mladá Boleslav se zapojil obránce
+											Matěj Stříteský. Ten je ze svého působení u Bruslařů v letech
+											2014 až 2017 stále kmenovým hráčem Středočechů a s klubem se
+											dohodl na možnosti trénovat a připravovat se s týmem. S největší
+											pravděpodobností jej uvidíte i v některých přípravných zápasech.
+										</p>
+									</div>
+									<div class="c-news-section__item">
+										<div class="c-news-section__row">
+											<div class="tag">6. 9. 2022</div>
+											<h2 class="h5">Zemřel pan Pecka</h2>
+										</div>
+										<p>
+											Ve věku 71 let dne 26. srpna nečekaně zemřel dlouholetý
+											zaměstnanec mladoboleslavského zimního stadionu pan Jiří Pecka.
+											Čest jeho památce.
+										</p>
+									</div>
 								</div>
+								<nav aria-label="Další stránky">
+									<ul class="pagination d-flex flex-wrap pagination-flat pagination-success">
+										<li class="page-item active">
+											<a class="page-link" href="#" data-abc="true">1</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#" data-abc="true">2</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#" data-abc="true">3</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#" data-abc="true">4</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#" data-abc="true"> »</a>
+										</li>
+									</ul>
+								</nav>
 							</div>
 						</div>
 					</div>
@@ -553,7 +549,7 @@
 		);
 	</script>
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script defer src="js/scripts.js?v=202209154230"></script>
+	<script defer src="js/scripts.js?v=20220915039"></script>
 </body>
 
 </html>

@@ -1,0 +1,24 @@
+.c-news-section {
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .tag {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 4px 16px;
+  }
+  &__item {
+    border-bottom: 0.0625rem solid var(--color-light-border);
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    &:last-child {
+      border-bottom: none;
+    }
+    .h5 {
+      padding-left: 16px;
+      color: var(--color-primary);
+    }
+  }
+}
