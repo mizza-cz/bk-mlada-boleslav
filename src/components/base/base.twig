@@ -22,9 +22,9 @@
     <link
       rel="stylesheet"
       media="screen, handheld"
-      href="css/styles.css?v=202209155340"
+      href="css/styles.css?v=202209154562"
     />
-    <link rel="stylesheet" media="print" href="css/prints.css?v=202209155340" />
+    <link rel="stylesheet" media="print" href="css/prints.css?v=202209154562" />
     <link
       rel="preload"
       href="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -51,9 +51,11 @@
             onclick="document.getElementById('overlay').style.display='none';"
             >Přejít na úvodní stránku.</a
           >
-          <div class="popup__img">
-            <img src="images/content/cover.png" loading="lazy" alt="" />
-          </div>
+          <a href="#">
+            <div class="popup__img">
+              <img src="images/content/cover.png" loading="lazy" alt="" />
+            </div>
+          </a>
         </div>
       </div>
       {% include "@components/header/header.twig" %}
@@ -78,9 +80,7 @@
       setTimeout(
         "document.getElementById('overlay').style.display='block'",
         delay_popup
-        
       );
-     
     </script>
     <script
       defer
@@ -88,6 +88,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/scripts.js?v=202209155214"></script>
+    <script defer src="js/scripts.js?v=20220915568"></script>
   </body>
 </html>
