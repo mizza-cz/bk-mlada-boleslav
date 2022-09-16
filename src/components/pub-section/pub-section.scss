@@ -14,9 +14,8 @@
     }
     a {
       @include media-breakpoint-down(xl) {
-        aspect-ratio: 1280/548;
         img {
-          height: 100%;
+          height: auto;
         }
       }
     }
