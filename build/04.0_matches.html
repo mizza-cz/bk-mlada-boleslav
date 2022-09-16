@@ -11,8 +11,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 	<link rel="preload" href="css/styles.css" as="style" />
-	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202209163764" />
-	<link rel="stylesheet" media="print" href="css/prints.css?v=202209163764" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202209161824" />
+	<link rel="stylesheet" media="print" href="css/prints.css?v=202209161824" />
 	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
 	<link rel="preload" href="js/scripts.js" as="script" />
@@ -236,16 +236,48 @@
 							<div class="shadow-wrapper">
 								<div class="header-section">
 									<h1 class="h4 text-primary">Tipsport extraliga</h1>
+
+								</div>
+								<div class="header-section__row">
 									<form action="" class="w-auto d-flex header-section__form">
-										<label class="o-select header-section__label">
-											<select class="js-select">
-												<option>Všechny zápasy</option>
-												<option value="tipsport">2020/21</option>
-												<option value="tipsport">2019/20</option>
-												<option value="tipsport">2018/19</option>
-												<option value="tipsport">2017/18</option>
-											</select>
-										</label>
+										<div class="row gy-6">
+											<div class="col-xl-4 col-sm-4">
+												<label class="o-select header-section__label">
+													<select class="js-select">
+														<option>Všechny zápasy</option>
+														<option value="tipsport">2020/21</option>
+														<option value="tipsport">2019/20</option>
+														<option value="tipsport">2018/19</option>
+														<option value="tipsport">2017/18</option>
+													</select>
+												</label>
+											</div>
+											<div class="col-xl-2 col-sm-4">
+												<select class="js-select select2-hidden-accessible" onchange="location.href=this.options[this.selectedIndex].value">
+													<option value="/matches/MUZ/2023//?type=" selected>Vše</option>
+													<option value="/matches/MUZ/2023//?type=home">pouze doma</option>
+													<option value="/matches/MUZ/2023//?type=away">pouze venku</option>
+												</select>
+											</div>
+											<div class="col-xl-4 col-sm-4">
+												<div class="c-matches-section__games col-md-10">
+													<button type="button" id="btn-games-calendar-collapse" class="btn btn-default">Zápasy do kalendáře</button>
+													<div id="games-calendar-collapse" aria-expanded="false" class="collapse">
+														<a href="#">
+															<img src="images/content/calendar.png" width="22" height="22">Apple
+														</a>
+														<a href="#">
+															<img src="images/content/outlook.png" width="22" height="22">Outlook
+														</a>
+														</a>
+														<a href="#" target="_blank">
+															<img src="images/ico/google-calendar.svg" width="22" height="22">Google
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
 									</form>
 								</div>
 								<div class="col-xl-6 col-xl-12 c-match d-flex align-items-center">
@@ -842,7 +874,7 @@
 		);
 	</script>
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script defer src="js/scripts.js?v=202209161056"></script>
+	<script defer src="js/scripts.js?v=202209161226"></script>
 </body>
 
 </html>

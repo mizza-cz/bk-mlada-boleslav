@@ -1,4 +1,17 @@
 .c-calendar-section {
+  @media (max-width: 840px) {
+    table.nice {
+      display: block;
+      overflow-x: auto;
+      border-collapse: collapse;
+    }
+  }
+  .shadow-wrapper {
+    padding-bottom: 40px;
+    @media (max-width: 840px) {
+      padding-bottom: 60px;
+    }
+  }
   th {
     padding: 16px;
     background-color: var(--color-primary);
@@ -30,4 +43,174 @@
   background: #baeeb5;
   border-radius: 4px;
   margin-left: 30px;
+}
+#calendar_legend {
+  margin: 20px;
+}
+main .toleft {
+  float: left;
+}
+#calendar {
+  padding-top: 15px;
+}
+
+#calendar_navigation {
+  margin-bottom: 20px;
+}
+
+#calendar_navigation #months {
+  float: left;
+  width: 100%;
+}
+
+#calendar_navigation #months a.arrow {
+  background: url("../../img/ico-left.png") top left no-repeat;
+  display: block;
+  float: left;
+  font-size: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 2px 0 0 0;
+  text-decoration: none;
+  width: 30px;
+}
+
+#calendar_navigation #months a.arrow.right {
+  background-image: url("../../img/ico-right.png");
+  margin-left: 5px;
+}
+
+#calendar_navigation #months #month {
+  color: #3f9c35;
+  float: left;
+  font-family: "FuturaPT heavy", sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+  margin-left: 10px;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+#calendar_navigation #category {
+  color: #000;
+  float: left;
+  font-size: 0.9em;
+  text-align: right;
+  width: 280px;
+}
+
+#kalendar {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#kalendar tr th {
+  font-weight: normal;
+  text-align: center;
+  font-size: 16px;
+}
+
+#kalendar tr th a {
+  color: #126497 !important;
+}
+
+#kalendar td {
+  color: #000;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 14.28%;
+  @media (max-width: 840px) {
+    padding: 4px;
+  }
+}
+
+#kalendar tr .kalNormalni .game {
+  display: none;
+  visibility: hidden;
+}
+
+#kalendar tr .kalNormalni .team_name {
+  visibility: hidden;
+  display: none;
+}
+
+#kalendar tr .kalNormalni .day_number {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background: #eee;
+  border-radius: 4px;
+  border: 1px solid #cecece;
+  font-size: 20px;
+  line-height: 76px;
+}
+
+#kalendar tr .home .day_number,
+#kalendar tr .visiting .day_number {
+  visibility: hidden;
+  display: none;
+}
+
+#kalendar tr .home .team_name,
+#kalendar tr .visiting .team_name {
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-left: 1px solid #cecece;
+  border-radius: 4px 4px 0 0;
+  border-right: 1px solid #cecece;
+  border-top: 1px solid #cecece;
+
+  height: 40px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+#kalendar tr .home .game_info,
+#kalendar tr .visiting .game_info {
+  -moz-border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-bottom: 1px solid #cecece;
+  border-left: 1px solid #cecece;
+  border-radius: 0 0 4px 4px;
+  border-right: 1px solid #cecece;
+  font-size: 15px;
+  font-weight: 700;
+  height: 36px;
+  line-height: 36px;
+  @media (max-width: 840px) {
+    line-height: 16px;
+  }
+}
+
+#kalendar tr .home .team_name,
+#kalendar tr .home .game_info {
+  background: #e5fae2;
+}
+
+#kalendar tr .visiting .team_name,
+#kalendar tr .visiting .game_info {
+  background: #baeeb5;
+}
+
+#calendar_legend {
+  margin: 20px;
+}
+
+#calendar_legend .legend.home {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background: #e5fae2;
+  border-radius: 4px;
+}
+
+#calendar_legend .legend.away {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background: #baeeb5;
+  border-radius: 4px;
+  margin-left: 30px;
+}
+
+#calendar_legend .name {
+  margin: 2px 0 0 10px;
 }

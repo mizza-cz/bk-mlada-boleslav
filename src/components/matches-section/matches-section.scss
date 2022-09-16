@@ -153,3 +153,43 @@
 .win {
   color: var(--color-primary);
 }
+.c-matches-section__menu {
+  .btn {
+    padding: 0 0.625rem;
+    transition: all 0.3s;
+    border: none;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2.0625rem;
+    border-radius: 0;
+    width: max-content;
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+.c-matches-section__games {
+  .btn:focus {
+    box-shadow: none;
+  }
+  .collapse:not(.show),
+  .navbar {
+    display: none;
+  }
+}
+#games-calendar-collapse {
+  margin-top: 10px;
+  a {
+    text-decoration: none;
+    img {
+      margin-right: 8px;
+    }
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+}
