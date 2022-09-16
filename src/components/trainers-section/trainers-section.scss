@@ -3,20 +3,20 @@
 .c-trainers {
   position: relative;
   margin-bottom: 32px;
+  &:hover {
+    .h5 {
+      text-decoration-color: inherit;
+    }
+    .c-trainers__img::before {
+      transform: scale(1.05);
+    }
+    img {
+      transform: scale(1.05);
+    }
+  }
   a {
     display: block;
     text-decoration-color: transparent;
-    &:hover {
-      .h5 {
-        text-decoration-color: inherit;
-      }
-      .c-trainers__img::before {
-        transform: scale(1.05);
-      }
-      img {
-        transform: scale(1.05);
-      }
-    }
   }
   &__info {
     position: absolute;
