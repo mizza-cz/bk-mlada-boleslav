@@ -11,8 +11,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 	<link rel="preload" href="css/styles.css" as="style" />
-	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202209164038" />
-	<link rel="stylesheet" media="print" href="css/prints.css?v=202209164038" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202209163141" />
+	<link rel="stylesheet" media="print" href="css/prints.css?v=202209163141" />
 	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
 	<link rel="preload" href="js/scripts.js" as="script" />
@@ -229,118 +229,422 @@
 			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
-			<div class="partners">
+			<section class="c-calendar-section">
 				<div class="container">
-					<div class="row justify-content-center align-items-center partners-slider">
-						<div class="col-12 col-md-3 text-center">
-							<a class="partners__item" href="#">
-								<img src="images/content/partner-1.png" loading="lazy" alt="" />
-							</a>
-						</div>
-						<div class="col-12 col-md-3 text-center">
-							<a class="partners__item" href="#">
-								<img src="images/content/partner-2.png" loading="lazy" alt="" />
-							</a>
-						</div>
-						<div class="col-12 col-md-3 text-center">
-							<a class="partners__item" href="#">
-								<img src="images/content/partner-3.png" loading="lazy" alt="" />
-							</a>
-						</div>
-						<div class="col-12 col-md-3 text-center">
-							<a class="partners__item" href="#">
-								<img src="images/content/partner-4.png" loading="lazy" alt="" />
-							</a>
-						</div>
-						<div class="col-12 col-md-3 text-center">
-							<a class="partners__item" href="#">
-								<img src="images/content/partner-5.png" loading="lazy" alt="" />
-							</a>
-						</div>
-						<div class="col-12 col-md-3 text-center">
-							<a class="partners__item" href="#">
-								<img src="images/content/partner-6.png" loading="lazy" alt="" />
-							</a>
-						</div>
-						<div class="col-12 col-md-3 text-center">
-							<a class="partners__item" href="#">
-								<img src="images/content/partner-1.png" loading="lazy" alt="" />
-							</a>
-						</div>
-						<div class="col-12 col-md-3 text-center">
-							<a class="partners__item" href="#">
-								<img src="images/content/partner-2.png" loading="lazy" alt="" />
-							</a>
-						</div>
-						<div class="col-12 col-md-3 text-center">
-							<a class="partners__item" href="#">
-								<img src="images/content/partner-3.png" loading="lazy" alt="" />
-							</a>
-						</div>
-						<div class="col-12 col-md-3 text-center">
-							<a class="partners__item" href="#">
-								<img src="images/content/partner-4.png" loading="lazy" alt="" />
-							</a>
-						</div>
-						<div class="col-12 col-md-3 text-center">
-							<a class="partners__item" href="#">
-								<img src="images/content/partner-5.png" loading="lazy" alt="" />
-							</a>
-						</div>
-						<div class="col-12 col-md-3 text-center">
-							<a class="partners__item" href="#">
-								<img src="images/content/partner-6.png" loading="lazy" alt="" />
-							</a>
+					<div class="row">
+						<div class="col-xl-8">
+							<div class="shadow-wrapper">
+								<div class="header-section">
+									<h1 class="h4 text-primary">Kalendář zápasů</h1>
+								</div>
+								<div class="header-section w-100">
+									<form action="" class="w-100 d-flex header-section__form">
+										<label class="o-select w-100 header-section__label">
+											Zobrazit kalendář pro:
+											<select class="js-select">
+												<option>Muži</option>
+												<option>B tým</option>
+												<option>Junioři</option>
+												<option>Starší dorost</option>
+												<option>Mladší dorost</option>
+												<option>Mladší dorost B</option>
+												<option>Dorost</option>
+												<option>Dorost B</option>
+												<option>Starší žáci</option>
+												<option>Mladší žáci</option>
+												<option>9. třída</option>
+												<option>8. třída</option>
+												<option>7. třída</option>
+												<option>6. třída</option>
+												<option>5. třída</option>
+												<option>4. třída</option>
+												<option>3. třída</option>
+												<option>2. třída</option>
+												<option>1. třída</option>
+												<option>Ženy</option>
+											</select>
+										</label>
+									</form>
+								</div>
+								<div id="calendar_navigation">
+									<div id="months">
+										<a class="arrow left" href="kalendar.asp?date=16.08.2022&amp;id_kategorie=">
+											<< </a>
+												<div id="month">září 2022</div>
+												<a class="arrow right" href="kalendar.asp?date=16.10.2022&amp;id_kategorie=">>></a>
+									</div>
+								</div>
+								<table id="kalendar" class="table nice">
+									<thead>
+										<tr>
+											<th>Pondělí</th>
+											<th>Úterý</th>
+											<th>Středa</th>
+											<th>Čtvrtek</th>
+											<th>Pátek</th>
+											<th>Sobota</th>
+											<th>Neděle</th>
+										</tr>
+									</thead>
+									<tr>
+										<td class="kalPrazdny">&nbsp;</td>
+										<td class="kalPrazdny">&nbsp;</td>
+										<td class="kalPrazdny">&nbsp;</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">1</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">2</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">3</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">4</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+									</tr>
+									<tr>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">5</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">6</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">7</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">8</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">9</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">10</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">11</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+									</tr>
+									<tr>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">12</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">13</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">14</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">15</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="home">
+											<div class="day_number">16</div>
+											<div class="team_name">SPA</div>
+											<div class="game_info">16. 9. 17:30</div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">17</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="visiting">
+											<div class="day_number">18</div>
+											<div class="team_name">OLO</div>
+											<div class="game_info">18. 9. 17:00</div>
+										</td>
+									</tr>
+									<tr>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">19</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">20</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">21</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">22</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="home">
+											<div class="day_number">23</div>
+											<div class="team_name">CEB</div>
+											<div class="game_info">23. 9. 17:30</div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">24</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="visiting">
+											<div class="day_number">25</div>
+											<div class="team_name">PCE</div>
+											<div class="game_info">25. 9. 18:00</div>
+										</td>
+									</tr>
+									<tr>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">26</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="home">
+											<div class="day_number">27</div>
+											<div class="team_name">LIB</div>
+											<div class="game_info">27. 9. 17:30</div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">28</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td valign="top" class="visiting">
+											<div class="day_number">29</div>
+											<div class="team_name">VIT</div>
+											<div class="game_info">29. 9. 17:30</div>
+										</td>
+										<td valign="top" class="kalNormalni">
+											<div class="day_number">30</div>
+											<div class="team_name"></div>
+											<div class="game_info"></div>
+										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+
+								</table>
+
+								<div id="calendar_legend">
+									<div class="toleft legend home">&nbsp;</div>
+									<div class="toleft name">Domácí zápasy</div>
+									<div class="toleft legend away">&nbsp;</div>
+									<div class="toleft name">Venkovní zápasy</div>
+								</div>
+							</div>
+
 						</div>
 					</div>
+					<aside class="aside col-xl-4 gy-10">
+						<div class="aside-box">
+							<h2 class="h5">Klub</h2>
+							<ul class="aside__menu">
+								<li>
+									<a class="active" href="#">Základní informace</a>
+								</li>
+								<li>
+									<a href="#">Realizační tým</a>
+								</li>
+								<li>
+									<a href="#">Změny v kádru</a>
+								</li>
+								<li>
+									<a href="#">B-tým</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mb-4">
+							<article class="post">
+								<a href="#" class="post__link">
+									<div class="post__img">
+										<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+										<div class="date">16. 12. 2021</div>
+									</div>
+									<div class="post__info">
+										<h3 class="h6">
+											Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
+										</h3>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="mb-4">
+							<article class="post">
+								<a href="#" class="post__link">
+									<div class="post__img">
+										<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+										<div class="date">16. 12. 2021</div>
+									</div>
+									<div class="post__info">
+										<h3 class="h6">
+											Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
+										</h3>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="mb-4">
+							<article class="post">
+								<a href="#" class="post__link">
+									<div class="post__img">
+										<img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+										<div class="date">16. 12. 2021</div>
+									</div>
+									<div class="post__info">
+										<h3 class="h6">
+											Po draftu CHL jsem nadšený, přiznává David Moravec. Co bude dál?
+										</h3>
+									</div>
+								</a>
+							</article>
+						</div>
+						<a href="#" class="link">Další články</a>
+					</aside>
+				</div>
+	</div>
+	</section>
+
+	<div class="partners">
+		<div class="container">
+			<div class="row justify-content-center align-items-center partners-slider">
+				<div class="col-12 col-md-3 text-center">
+					<a class="partners__item" href="#">
+						<img src="images/content/partner-1.png" loading="lazy" alt="" />
+					</a>
+				</div>
+				<div class="col-12 col-md-3 text-center">
+					<a class="partners__item" href="#">
+						<img src="images/content/partner-2.png" loading="lazy" alt="" />
+					</a>
+				</div>
+				<div class="col-12 col-md-3 text-center">
+					<a class="partners__item" href="#">
+						<img src="images/content/partner-3.png" loading="lazy" alt="" />
+					</a>
+				</div>
+				<div class="col-12 col-md-3 text-center">
+					<a class="partners__item" href="#">
+						<img src="images/content/partner-4.png" loading="lazy" alt="" />
+					</a>
+				</div>
+				<div class="col-12 col-md-3 text-center">
+					<a class="partners__item" href="#">
+						<img src="images/content/partner-5.png" loading="lazy" alt="" />
+					</a>
+				</div>
+				<div class="col-12 col-md-3 text-center">
+					<a class="partners__item" href="#">
+						<img src="images/content/partner-6.png" loading="lazy" alt="" />
+					</a>
+				</div>
+				<div class="col-12 col-md-3 text-center">
+					<a class="partners__item" href="#">
+						<img src="images/content/partner-1.png" loading="lazy" alt="" />
+					</a>
+				</div>
+				<div class="col-12 col-md-3 text-center">
+					<a class="partners__item" href="#">
+						<img src="images/content/partner-2.png" loading="lazy" alt="" />
+					</a>
+				</div>
+				<div class="col-12 col-md-3 text-center">
+					<a class="partners__item" href="#">
+						<img src="images/content/partner-3.png" loading="lazy" alt="" />
+					</a>
+				</div>
+				<div class="col-12 col-md-3 text-center">
+					<a class="partners__item" href="#">
+						<img src="images/content/partner-4.png" loading="lazy" alt="" />
+					</a>
+				</div>
+				<div class="col-12 col-md-3 text-center">
+					<a class="partners__item" href="#">
+						<img src="images/content/partner-5.png" loading="lazy" alt="" />
+					</a>
+				</div>
+				<div class="col-12 col-md-3 text-center">
+					<a class="partners__item" href="#">
+						<img src="images/content/partner-6.png" loading="lazy" alt="" />
+					</a>
 				</div>
 			</div>
-		</main>
-		<footer class="footer">
-			<a class="footer__logo" href="">
-				<img src="images/content/logo.png" loading="lazy" alt="logo" />
-			</a>
-			<div class="container">
-				<div class="footer__inner">
-					<p>
-						Copyright © 2011 – 2022 BK Mladá Boleslav a.s. &
-						<a href="https://esportsmedia.cz/">eSports.cz, s.r.o.</a>
-					</p>
-					<div class="footer__links">
-						<a href="#">Nastavení cookies</a>
-						<ul class="social">
-							<li class="social__item">
-								<a target="_blank" class="social__link " href="#">
-									<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15 0C6.716 0 0 6.744 0 15.063c0 7.46 5.408 13.64 12.498 14.836V18.205H8.88v-4.208h3.618v-3.103c0-3.6 2.19-5.562 5.39-5.562 1.531 0 2.848.114 3.23.165V9.26l-2.219.001c-1.739 0-2.074.83-2.074 2.048v2.686h4.15l-.542 4.208h-3.608V30C24.246 29.093 30 22.756 30 15.059 30 6.744 23.284 0 15 0z" fill="#27a63b" />
-									</svg> </a>
-							</li>
-							<li class="social__item">
-								<a target="_blank" class="social__link " href="#">
-									<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm21.859-2.86c0-.149-.004-.297-.01-.445a6.994 6.994 0 001.717-1.783 6.866 6.866 0 01-1.977.543 3.456 3.456 0 001.514-1.905 6.906 6.906 0 01-2.186.836 3.444 3.444 0 00-5.867 3.14 9.775 9.775 0 01-7.097-3.598 3.44 3.44 0 001.066 4.596 3.419 3.419 0 01-1.56-.43v.044a3.444 3.444 0 002.762 3.375 3.442 3.442 0 01-1.555.06 3.447 3.447 0 003.217 2.39 6.908 6.908 0 01-4.276 1.474c-.278 0-.552-.015-.822-.047a9.746 9.746 0 005.278 1.546c6.333 0 9.796-5.246 9.796-9.796z" fill="#27a63b" />
-									</svg> </a>
-							</li>
-							<li class="social__item">
-								<a target="_blank" class="social__link " href="#">
-									<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-										<path d="M17.871 15a2.871 2.871 0 11-5.742 0 2.871 2.871 0 015.742 0z" fill="#27a63b" />
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M21.714 9.92a2.669 2.669 0 00-.644-.99 2.666 2.666 0 00-.99-.644c-.304-.118-.76-.259-1.6-.297-.908-.041-1.18-.05-3.48-.05s-2.572.008-3.48.05c-.84.038-1.297.179-1.6.297a2.665 2.665 0 00-.99.644 2.67 2.67 0 00-.645.99c-.118.304-.258.76-.296 1.6-.042.908-.05 1.18-.05 3.48s.008 2.572.05 3.48c.038.84.178 1.297.296 1.6.138.374.358.713.645.99.277.287.616.507.99.645.303.118.76.258 1.6.296.908.042 1.18.05 3.48.05s2.572-.008 3.48-.05c.84-.038 1.296-.178 1.6-.296a2.852 2.852 0 001.634-1.635c.118-.303.259-.76.297-1.6.041-.908.05-1.18.05-3.48s-.009-2.572-.05-3.48c-.038-.84-.178-1.296-.297-1.6zM15 19.423a4.423 4.423 0 110-8.846 4.423 4.423 0 010 8.846zm3.564-9.02a1.034 1.034 0 102.067 0 1.034 1.034 0 00-2.067 0z" fill="#27a63b" />
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm23.161 5.642c.213-.548.359-1.174.4-2.09.042-.92.052-1.213.052-3.552 0-2.34-.01-2.633-.051-3.551-.042-.917-.188-1.543-.401-2.09a4.222 4.222 0 00-.993-1.526 4.222 4.222 0 00-1.526-.994c-.548-.213-1.174-.358-2.09-.4-.92-.042-1.213-.052-3.552-.052-2.34 0-2.633.01-3.551.052-.917.042-1.543.187-2.09.4a4.219 4.219 0 00-1.526.994 4.22 4.22 0 00-.994 1.525c-.213.548-.359 1.174-.4 2.09-.042.92-.052 1.213-.052 3.552 0 2.34.01 2.633.052 3.551.042.917.187 1.543.4 2.09a4.22 4.22 0 00.994 1.526c.43.439.95.778 1.525.994.548.213 1.174.358 2.09.4.92.042 1.213.052 3.552.052 2.34 0 2.633-.01 3.551-.052.917-.042 1.543-.187 2.09-.4a4.404 4.404 0 002.52-2.52z" fill="#27a63b" />
-									</svg> </a>
-							</li>
-							<li class="social__item">
-								<a target="_blank" class="social__link " href="#">
-									<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-										<path d="M13.132 17.81l4.88-2.81-4.88-2.81v5.62z" fill="#27a63b" />
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm23.987 4.524c.386-1.467.386-4.509.386-4.509s.015-3.057-.386-4.524a2.349 2.349 0 00-1.652-1.652C20.867 8.437 15 8.437 15 8.437s-5.868 0-7.335.387a2.396 2.396 0 00-1.652 1.667C5.627 11.958 5.627 15 5.627 15s0 3.057.386 4.509a2.35 2.35 0 001.652 1.652c1.483.401 7.335.401 7.335.401s5.868 0 7.334-.386a2.349 2.349 0 001.653-1.652z" fill="#27a63b" />
-									</svg> </a>
-							</li>
-						</ul>
-					</div>
+		</div>
+	</div>
+	</main>
+	<footer class="footer">
+		<a class="footer__logo" href="">
+			<img src="images/content/logo.png" loading="lazy" alt="logo" />
+		</a>
+		<div class="container">
+			<div class="footer__inner">
+				<p>
+					Copyright © 2011 – 2022 BK Mladá Boleslav a.s. &
+					<a href="https://esportsmedia.cz/">eSports.cz, s.r.o.</a>
+				</p>
+				<div class="footer__links">
+					<a href="#">Nastavení cookies</a>
+					<ul class="social">
+						<li class="social__item">
+							<a target="_blank" class="social__link " href="#">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15 0C6.716 0 0 6.744 0 15.063c0 7.46 5.408 13.64 12.498 14.836V18.205H8.88v-4.208h3.618v-3.103c0-3.6 2.19-5.562 5.39-5.562 1.531 0 2.848.114 3.23.165V9.26l-2.219.001c-1.739 0-2.074.83-2.074 2.048v2.686h4.15l-.542 4.208h-3.608V30C24.246 29.093 30 22.756 30 15.059 30 6.744 23.284 0 15 0z" fill="#27a63b" />
+								</svg> </a>
+						</li>
+						<li class="social__item">
+							<a target="_blank" class="social__link " href="#">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm21.859-2.86c0-.149-.004-.297-.01-.445a6.994 6.994 0 001.717-1.783 6.866 6.866 0 01-1.977.543 3.456 3.456 0 001.514-1.905 6.906 6.906 0 01-2.186.836 3.444 3.444 0 00-5.867 3.14 9.775 9.775 0 01-7.097-3.598 3.44 3.44 0 001.066 4.596 3.419 3.419 0 01-1.56-.43v.044a3.444 3.444 0 002.762 3.375 3.442 3.442 0 01-1.555.06 3.447 3.447 0 003.217 2.39 6.908 6.908 0 01-4.276 1.474c-.278 0-.552-.015-.822-.047a9.746 9.746 0 005.278 1.546c6.333 0 9.796-5.246 9.796-9.796z" fill="#27a63b" />
+								</svg> </a>
+						</li>
+						<li class="social__item">
+							<a target="_blank" class="social__link " href="#">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17.871 15a2.871 2.871 0 11-5.742 0 2.871 2.871 0 015.742 0z" fill="#27a63b" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M21.714 9.92a2.669 2.669 0 00-.644-.99 2.666 2.666 0 00-.99-.644c-.304-.118-.76-.259-1.6-.297-.908-.041-1.18-.05-3.48-.05s-2.572.008-3.48.05c-.84.038-1.297.179-1.6.297a2.665 2.665 0 00-.99.644 2.67 2.67 0 00-.645.99c-.118.304-.258.76-.296 1.6-.042.908-.05 1.18-.05 3.48s.008 2.572.05 3.48c.038.84.178 1.297.296 1.6.138.374.358.713.645.99.277.287.616.507.99.645.303.118.76.258 1.6.296.908.042 1.18.05 3.48.05s2.572-.008 3.48-.05c.84-.038 1.296-.178 1.6-.296a2.852 2.852 0 001.634-1.635c.118-.303.259-.76.297-1.6.041-.908.05-1.18.05-3.48s-.009-2.572-.05-3.48c-.038-.84-.178-1.296-.297-1.6zM15 19.423a4.423 4.423 0 110-8.846 4.423 4.423 0 010 8.846zm3.564-9.02a1.034 1.034 0 102.067 0 1.034 1.034 0 00-2.067 0z" fill="#27a63b" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm23.161 5.642c.213-.548.359-1.174.4-2.09.042-.92.052-1.213.052-3.552 0-2.34-.01-2.633-.051-3.551-.042-.917-.188-1.543-.401-2.09a4.222 4.222 0 00-.993-1.526 4.222 4.222 0 00-1.526-.994c-.548-.213-1.174-.358-2.09-.4-.92-.042-1.213-.052-3.552-.052-2.34 0-2.633.01-3.551.052-.917.042-1.543.187-2.09.4a4.219 4.219 0 00-1.526.994 4.22 4.22 0 00-.994 1.525c-.213.548-.359 1.174-.4 2.09-.042.92-.052 1.213-.052 3.552 0 2.34.01 2.633.052 3.551.042.917.187 1.543.4 2.09a4.22 4.22 0 00.994 1.526c.43.439.95.778 1.525.994.548.213 1.174.358 2.09.4.92.042 1.213.052 3.552.052 2.34 0 2.633-.01 3.551-.052.917-.042 1.543-.187 2.09-.4a4.404 4.404 0 002.52-2.52z" fill="#27a63b" />
+								</svg> </a>
+						</li>
+						<li class="social__item">
+							<a target="_blank" class="social__link " href="#">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.132 17.81l4.88-2.81-4.88-2.81v5.62z" fill="#27a63b" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0 15C0 6.717 6.717 0 15 0c8.283 0 15 6.717 15 15 0 8.283-6.717 15-15 15-8.283 0-15-6.717-15-15zm23.987 4.524c.386-1.467.386-4.509.386-4.509s.015-3.057-.386-4.524a2.349 2.349 0 00-1.652-1.652C20.867 8.437 15 8.437 15 8.437s-5.868 0-7.335.387a2.396 2.396 0 00-1.652 1.667C5.627 11.958 5.627 15 5.627 15s0 3.057.386 4.509a2.35 2.35 0 001.652 1.652c1.483.401 7.335.401 7.335.401s5.868 0 7.334-.386a2.349 2.349 0 001.653-1.652z" fill="#27a63b" />
+								</svg> </a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 	</div>
 	<!-- Lista s tymy -->
 	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -356,7 +660,7 @@
 		);
 	</script>
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script defer src="js/scripts.js?v=20220916912"></script>
+	<script defer src="js/scripts.js?v=202209164051"></script>
 </body>
 
 </html>

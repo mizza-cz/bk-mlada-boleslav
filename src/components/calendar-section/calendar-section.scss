@@ -1,0 +1,28 @@
+.c-calendar-section {
+  th {
+    padding: 0 16px;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+  }
+}
+#months {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+  }
+}
+#month {
+  color: var(--color-primary);
+  font-size: 30px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 16px;
+}
