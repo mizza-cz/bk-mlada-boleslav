@@ -184,7 +184,7 @@ main .toleft {
 
 #kalendar tr .home .team_name,
 #kalendar tr .home .game_info {
-  background: #e5fae2;
+  background: var(--color-primary-dark);
 }
 
 #kalendar tr .visiting .team_name,
@@ -199,7 +199,7 @@ main .toleft {
 #calendar_legend .legend.home {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  background: #e5fae2;
+  background: var(--color-primary-dark);
   border-radius: 4px;
 }
 
@@ -213,4 +213,21 @@ main .toleft {
 
 #calendar_legend .name {
   margin: 2px 0 0 10px;
+}
+.c-calendar-section__menu {
+  padding: 10px 0;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+  a {
+    color: var(--color-light);
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  .active {
+    font-weight: 700;
+  }
 }
